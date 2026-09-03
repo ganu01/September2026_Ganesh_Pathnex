@@ -1,0 +1,20 @@
+-name: Install Naginx on Pathnex server
+ hosts: all
+ beacome: yes
+
+ tasks:
+	-name: Install ngnix 
+	yum:
+	   name: nginx
+	   state: present
+
+
+ Docker
+#Docker Installation & First Container 
+docker --version
+docker run unbuntu echo "Hello Pathnex"
+
+Docker File 
+FROM ubuntu:22.04
+cmd ["echo", "Hello Pathnex"]
+
